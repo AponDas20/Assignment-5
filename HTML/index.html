@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="sticky top-0 bg-white shadow-sm z-50 bg-gray-100">
+      <!-- Main Nav ber -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <button class="btn btn-success"><a href="./QA.html">Q/A</a></button>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-md"
+            ><img class="w-7" src="../assets/logo.png" alt="" />Donate
+            Bangladesh</a
+          >
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-defalt btn-ghost">
+            <img class="w-4" src="../assets/coin.png" alt="" />
+            <p id="main-balance">5200</p>
+          </button>
+        </div>
+      </div>
+
+      <!-- Donation Position block bar -->
+      <div class="navbar flex justify-center gap-5 my-5">
+        <div class="navbar-center">
+          <a id="donate" class="btn text-md hover:bg-green-300">Donate</a>
+        </div>
+        <div class="navbar-center">
+          <a id="history" class="btn text-md hover:bg-green-300">History</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="">
+      <!-- Card 1-->
+      <div
+        class="lg:flex flex-cols rounded-lg bg-base-100 shadow-sm lg:w-[80%] mx-auto"
+      >
+        <div class="lg:w-1/2 sm:w-full p-2">
+          <img src="../assets/noakhali.png" alt="" />
+        </div>
+        <div class="lg:w-1/2 sm:w-full my-5 mx-5">
+          <div class="flex h-5">
+            <img class="w-5" src="../assets/coin.png" alt="" />
+            <p id="first-donated-balance" class="text-sm">4500</p>
+          </div>
+          <h2 id="first-donate-title" class="card-title text-md my-2">
+            Donate for flood at Noakhali, Bangladesh
+          </h2>
+          <p class="text-[12px] mb-5">
+            Already 23 people have been killed by the ravages of the sudden
+            floods in Bangladesh, and millions more have been left with nothing,
+            trying to survive in an environment which is deadly. The scale of
+            the devastation is overwhelming, and urgent help is needed.
+          </p>
+
+          <input
+            id="first-donate-box"
+            type="text"
+            class="input h-8 w-full my-2"
+            placeholder="Which Donate Amount "
+            list="browsers"
+          />
+          <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Safari"></option>
+            <option value="Opera"></option>
+            <option value="Edge"></option>
+          </datalist>
+          <div class="card-actions justify-center">
+            <!-- <button id="first-donate-btn" class="btn btn-primary">
+              Donate Now
+            </button> -->
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              id="first-donate-btn"
+              class="btn btn-primary"
+              onclick="my_modal_5.showModal()"
+            >
+              Donate
+            </button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box">
+                <h3 id="modal-heading" class="text-lg font-bold">
+                  Congratulation!
+                </h3>
+                <p id="modal-text" class="py-4">
+                  Your Donated Successfully Done!. Thank You
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2-->
+      <div
+        class="lg:flex flex-cols rounded-lg bg-base-100 shadow-sm lg:w-[80%] mx-auto my-5"
+      >
+        <div class="lg:w-1/2 sm:w-full p-2">
+          <img class="w-full lg:h-66" src="../assets/feni.png" alt="" />
+        </div>
+        <div class="lg:w-1/2 sm:w-full my-5 mx-5">
+          <div class="flex h-5">
+            <img class="w-5" src="../assets/coin.png" alt="" />
+            <!-- Donated Balance -->
+            <p id="secend-donated-balance" class="text-sm">4500</p>
+          </div>
+          <h2 id="second-donate-title" class="card-title text-md my-2">
+            Donate for flood at Feni, Bangladesh
+          </h2>
+          <p class="text-[12px] mb-5">
+            Already 23 people have been killed by the ravages of the sudden
+            floods in Bangladesh, and millions more have been left with nothing,
+            trying to survive in an environment which is deadly. The scale of
+            the devastation is overwhelming, and urgent help is needed.
+          </p>
+
+          <!-- Donate Amount -->
+          <input
+            id="secend-donate-box"
+            type="text"
+            class="input h-8 w-full my-2"
+            placeholder="Which Donate Amount "
+            list="browsers"
+          />
+          <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Safari"></option>
+            <option value="Opera"></option>
+            <option value="Edge"></option>
+          </datalist>
+          <div class="card-actions justify-center">
+            <!-- <button id="first-donate-btn" class="btn btn-primary">
+              Donate Now
+            </button> -->
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              id="secend-donate-btn"
+              class="btn btn-primary"
+              onclick="my_modal_5.showModal()"
+            >
+              Donate
+            </button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box">
+                <h3 id="modal-heading" class="text-lg font-bold">
+                  Congratulation!
+                </h3>
+                <p id="modal-text" class="py-4">
+                  Your Donated Successfully Done!. Thank You
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+      </div>
+      <!-- Card -->
+      <div
+        class="lg:flex flex-cols rounded-lg bg-base-100 shadow-sm lg:w-[80%] mx-auto"
+      >
+        <div class="lg:w-1/2 sm:w-full p-2">
+          <img
+            class="w-full lg:h-66"
+            src="../assets/quota-protest.png"
+            alt=""
+          />
+        </div>
+        <div class="lg:w-1/2 sm:w-full my-5 mx-5">
+          <div class="flex h-5">
+            <img class="w-5" src="../assets/coin.png" alt="" />
+
+            <!-- Donated Balance -->
+            <p id="third-donated-balance" class="text-sm">4500</p>
+          </div>
+          <h2 id="third-donate-title" class="card-title text-md my-2">Donate for quota movement</h2>
+          <p class="text-[12px] mb-5">
+            Already 23 people have been killed by the ravages of the sudden
+            floods in Bangladesh, and millions more have been left with nothing,
+            trying to survive in an environment which is deadly. The scale of
+            the devastation is overwhelming, and urgent help is needed.
+          </p>
+
+          <!-- Donate Amount -->
+          <input
+            id="third-donate-box"
+            type="text"
+            class="input h-8 w-full my-2"
+            placeholder="Which Donate Amount "
+            list="browsers"
+          />
+          <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Safari"></option>
+            <option value="Opera"></option>
+            <option value="Edge"></option>
+          </datalist>
+          <div class="card-actions justify-center">
+            <!-- <button id="first-donate-btn" class="btn btn-primary">
+              Donate Now
+            </button> -->
+            <!-- Open the modal using ID.showModal() method -->
+            <button
+              id="third-donate-btn"
+              class="btn btn-primary"
+              onclick="my_modal_5.showModal()"
+            >
+              Donate
+            </button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <div class="modal-box">
+                <h3 id="modal-heading" class="text-lg font-bold">
+                  Congratulation!
+                </h3>
+                <p id="modal-text" class="py-4">
+                  Your Donated Successfully Done!. Thank You
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main id="main-one" class="">
+      
+    </main>
+
+    <script src="../JavaScript/donation.js"></script>
+  </body>
+</html>
